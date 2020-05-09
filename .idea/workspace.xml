@@ -32,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../BaghbanProject/75129_steakin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -50,6 +50,7 @@
       <workItem from="1580401098598" duration="71000" />
       <workItem from="1583435270419" duration="6384000" />
       <workItem from="1583831429376" duration="575000" />
+      <workItem from="1585341801880" duration="1232000" />
     </task>
     <servers />
   </component>

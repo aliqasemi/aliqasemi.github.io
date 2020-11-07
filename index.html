@@ -11,153 +11,147 @@
     <link href="CJ/css/material_icon.css" rel="stylesheet">
     <script defer src="CJ/js/all.js"></script> <!--load all styles -->
 </head>
-<body style="font-family: iransans ; background-color: black">
-<main>
+<body style="font-family:'Courier'; font-size: 50px" class="bg-dark text-info">
+<header>
+    <div class="container" style="margin-top: 15px">
+        <div class="row" style="font-size: 30px" data-aos="fade-right">
+            <div>AliQasemi <span class="glow1">/</span> <span class="glow2" id="demo">about-me</span></div>
+        </div>
+    </div>
+</header>
+<hr>
+<main data-aos="zoom-in-down">
     <div class="container">
         <div class="row">
-            <div class="card col-lg-4 col-md-6 col-sm-12 portfolio-item ov " style="width: 18rem ; margin: 5px auto ; background-color: #1c1c1c ; height: 500px" data-aos="fade-down">
-                <div class="hovereffect" style="height: 350px ;">
-                    <div class="row" style="direction: rtl ; background-color: #0b0b0b">
-                        <div class="row" style="margin: 0 auto ; width: 100% ;">
-                            <img class="card-img-top" src="CJ/pic/AliQasemi.jpg" alt="Card image cap" style=" height: 300px ;position: relative ; width: 100% ; border-radius: 20px ; background-attachment: fixed ; opacity: .6">
+            <div class="col-5" style="font-size: 20px">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item bg-dark text-info list-group-item-action active" name="about-me"
+                       onclick="f1()" id="list-About-me-list"
+                       data-toggle="list"
+                       href="#list-About-me" role="tab" aria-controls="home">About me</a>
+                    <a class="list-group-item bg-dark text-info list-group-item-action" name="educations" onclick="f2()"
+                       id="list-Educations-list"
+                       data-toggle="list"
+                       href="#list-Educations" role="tab" aria-controls="profile">Educations</a>
+                    <a class="list-group-item bg-dark text-info list-group-item-action" name="interest" onclick="f3()"
+                       id="list-Interest-list"
+                       data-toggle="list"
+                       href="#list-Interest" role="tab" aria-controls="messages">Interest</a>
+                    <a class="list-group-item bg-dark text-info list-group-item-action" name="contact"
+                       onclick="f4()" id="list-Skills-list"
+                       data-toggle="list"
+                       href="#list-Skills" role="tab" aria-controls="settings">Contact</a>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="container tab-content" id="nav-tabContent" style="font-size:30px">
+                    <div class="tab-pane fade show active" id="list-About-me" role="tabpanel"
+                         aria-labelledby="list-About-me-list" data-aos="zoom-out-up" data-aos-duration="800">
+                        My name is AliQasemi.<br>
+                        <div style="font-size: 20px">
+                            <i class="fas fa-map-marker-alt"></i>
+                            qom, mashhad
+                        </div>
+                        <hr>
+                        Interested in : <br>
+                        <ul class="list-group">
+                            <li class="list-group-item-action">Laravel backend developer</li>
+                            <li class="list-group-item-action">Frontend developer(VueJs,...)</li>
+                            <li class="list-group-item-action">Familiar With Design Patterns</li>
+                        </ul>
+                        <hr>
+                        Always Learning...
+                    </div>
+                    <div class="tab-pane fade" id="list-Educations" role="tabpanel"
+                         aria-labelledby="list-Educations-list">
+                        <div style="font-size: 20px">
+                            Elementary School : jahad Elementry School.<br>
+                            <hr>
+                            Middle School : zargari Middle School and seyyedi Middle School<br>
+                            <hr>
+                            High School : ayatollah Meshkini High School(Mathematical Physics)<br>
+                            <hr>
+                            Bachelor : Shahrood University of Technology(Software Engineering)<br>
+                            <hr>
+                            Master : Shahrood University of Technology(Student Of Software Engineering)(With privileged
+                            quota (without test))
+
                         </div>
                     </div>
-                    <div class="overlay">
-                        <h2 style="font-weight: bold">Ali Qasemi</h2>
-                        <p>
-                            <a href="#">Student Of Software Engineering At Shahrood University Of technology</a>
+                    <div class="tab-pane fade" id="list-Interest" role="tabpanel" aria-labelledby="list-Interest-list">
+                        <div style="font-size: 20px">
+                            My Love and My Wish in Housing and Construction. But I'm not able to do it at the moment
+                            (naturally because of insufficient money -:) ). Of course I had some experience in real
+                            estate
+                            consulting . The Another Love Is Programming. and I have some experiences with some of the
+                            programming languages like VB , C++, java(j2EE) , php(Laravel , Bot , ..) ,
+                            html/css/javaScript(bootstrap , less , xmlHTTPrequest and Jquery), sql(trigger function ,
+                            control of data and ...) , Docker , reactJS, vueJs, mql. I prefer web programming You can
+                            have a
+                            look at my last projects from <a href="https://github.com/aliqasemi">here</a>.
+                            Our team(vs vahid baghani $ hossein alirezaei) won 3rd place in Shahroud University of
+                            Technology acm tournament from 51 teams in first semester 98-99
+                            I like to improve data structure, Implementation of algorithm design and Design Patterns.
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-Skills" role="tabpanel" aria-labelledby="list-Skills-list">
+                        <img src="CJ/pic/Aliqasmei.jpg" class="img-fluid card-img" alt="Responsive image">
+                        <hr>
+                        <div class="row" style="text-align: center ; margin: 0 auto ; border-radius: 20px"
+                             data-aos="fade-left">
+                            <p class="text-right" style="font-family: iransans">
+                                پیروزی در دور اندیشی، دور اندیشی در بکارگیری صحیح اندیشه و اندیشه صحیح به راز داریست<br>
+                            <p style="font-size: 20px">امام علی علیه السلام</p><br>
+                        </div>
+                        <div class="col-md-12 col-sm-12" style="margin: 0 auto ; text-align: center ;">
+                            <ul class="social" style="text-align: center ; margin: 0 auto ; list-style-type: none">
+                                <li style="margin: 20px"><a
+                                        href="https://www.youtube.com/channel/UCuWmxkNIDxa0ryqDdQ0TbIg/featured?view_as=subscriber">
+                                    <img src="https://img.icons8.com/ios/26/000000/youtube.png"> </a></li>
+                                <li style="margin: 20px"><a href="https://twitter.com/aliqasemi_77"> <img
+                                        src="https://img.icons8.com/ios/26/000000/twitter.png"> </a></li>
+                                <li style="margin: 20px"><a href="https://t.me/aliqasemi_77"> <img
+                                        src="https://img.icons8.com/ios/26/000000/sent.png"> </a></li>
+                                <li style="margin: 20px"><a href="https://github.com/aliqasemi"> <img
+                                        src="https://img.icons8.com/ios/26/000000/github.png"> </a></li>
+                                <li style="margin: 20px"><a href="https://www.instagram.com/aliqasemi_778/"> <img
+                                        src="https://img.icons8.com/ios/26/000000/instagram-new.png"> </a></li>
+                                <li style="margin: 20px"><a href="https://gitlab.com/aliqasemi"> <img
+                                        src="https://img.icons8.com/ios/26/000000/gitlab.png"> </a></li>
+                            </ul>
+                        </div>
                         </p>
                     </div>
                 </div>
-                <div class="list-group list-group-flush" style="height: 200px ;  margin: 0 auto ; text-align: center">
-                    <div class="list-group-item plus_one text-center" style="margin: 0 auto ; text-align: center ; background: #1b1a1a ;">
-
-                        <div class="row" style="font-size: 10px ; direction: rtl ; background: #1b1a1a ; margin: 0 auto ; text-align: center">
-                            <div class="col-12" style="margin: 0 auto ; text-align: center ; font-size: 20px">
-                                <p class="text-muted" ><div class="col-12" style="margin: 0 auto ;  text-align: center" ><img src="https://img.icons8.com/metro/26/000000/marker.png">
-                                <br>
-                                Qom:-)Mashhad
-                                <br>
-                                شروع شد تمام من، همین دلیل انتهاست
-
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="text-align: center ; margin: 0 auto ; border-radius: 20px" data-aos="fade-left">
-            <div class="col-md-6" style="margin: 0 auto ; text-align: center ;">
-                <ul class="social" style="text-align: center ; margin: 0 auto ; list-style-type: none">
-                    <li style="margin: 20px"> <a href="https://www.facebook.com/aliqasemi1377"> <img src="https://img.icons8.com/ios/26/000000/facebook-new.png"> </a> </li>
-                    <li style="margin: 20px"> <a href="https://twitter.com/aliqasemi_77"> <img src="https://img.icons8.com/ios/26/000000/twitter.png"> </a> </li>
-                    <li style="margin: 20px"> <a href="https://t.me/aliqasemi_77"> <img src="https://img.icons8.com/ios/26/000000/sent.png"> </a> </li>
-                    <li style="margin: 20px"> <a href="https://github.com/aliqasemi"> <img src="https://img.icons8.com/ios/26/000000/github.png"> </a> </li>
-                    <li style="margin: 20px"> <a href="https://www.instagram.com/aliqasemi_77/"> <img src="https://img.icons8.com/ios/26/000000/instagram-new.png"> </a> </li>
-                    <li style="margin: 20px"> <a href="mailto:qasemi4245qq@gmail.com"> <img src="https://img.icons8.com/ios/26/000000/gmail-login.png"> </a> </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container"  >
-        <div class="row">
-            <div class="accordion" id="accordionExample" style="width: 100%;">
-                <div class="col-lg-12">
-                    <div class="col-lg-12">
-                        <div class="card  bg-dark text-white" style="width: fit-content">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Me And Educations
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    My name is AliQasemi.<br><hr>
-                                    and this my Education:<br><hr>
-                                    Elementary School : jahad Elementry School. <br><hr>
-                                    Middle School : zargari Middle School and
-                                    seyyedi Middle School<br><hr>
-                                    High School : ayatollah Meshkini High School(Mathematical Physics)<br><hr>
-                                    Bachelor : Shahrood University of Technology(Student Of Software Engineering)<br><hr>
-                                    Master : I could use the university's talent quotas, but I prefer to finish my education right now.<br><hr>
-                                    I am originally from Qom and Mashhad.<br><hr>
-                                    <!--I'm from the second Bajak neighborhood !-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="card  bg-dark text-white">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Interested In:
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    My Love and My Wish in Housing and Construction. But I'm not able to do it at the moment (naturally because of insufficient money -:) ).
-                                    Of course I had some experience in real estate consulting .
-                                    The Another Love Is Programming. and I have some experiences with some of the programming languages like VB , C++, java(j2EE) , php(Laravel) ,
-                                    html/css/javaScript(bootstrap , less , xmlHTTPrequest and Jquery), sql(trigger function , control of data and ...) , reactJS .
-                                    I prefer web programming You can have a look at my last projects from <a href="https://github.com/aliqasemi">here</a>.<br>
-                                    Our team(vs vahid baghani $ hossein alirezaei) won 3rd place in Shahroud University of Technology acm tournament from 51 teams in first semester 98-99<br>
-                                    I like to improve data structure and Implementation of algorithm design.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="card bg-dark text-white">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Favorites
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p class="text-primary">In politics:</p>
-                                    Since the age of ten I have created unauthorized blogs and have been blocked several times and I have been reminded
-                                    I regret my work<br><br>
-                                    <hr>
-                                    <p class="text-primary">in the movie and Serial:</p>
-                                    If I have to say six folds: <br>
-                                    breaking bad ,  interstellar , shahrzad , shawshank redemption , joker , dar cheshm bad
-                                    <br><br>
-                                    <hr>
-                                    <p class="text-primary">In Music:</p>
-                                    If I have to say three folds: <br>
-                                    pink floyd , sia , mahasti
-                                    <br><br>
-                                    <hr>
-                                    <p class="text-primary">In the opinions:</p>
-                                    Unlike to my political viewpoint, I have always maintained my beliefs and honored my religion, but I also have respect for others opinion.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
             </div>
         </div>
     </div>
 </main>
-
 </body>
+<script>
+    function f1() {
+        var x = document.getElementById("list-About-me-list").name;
+        document.getElementById("demo").innerHTML = x;
+    }
 
+    function f2() {
+        var x = document.getElementById("list-Educations-list").name;
+        document.getElementById("demo").innerHTML = x;
+    }
+
+    function f3() {
+        var x = document.getElementById("list-Interest-list").name;
+        document.getElementById("demo").innerHTML = x;
+    }
+
+    function f4() {
+        var x = document.getElementById("list-Skills-list").name;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
 <script src="CJ/js/aos.js"></script>
 <script>
-    AOS.init() ;
+    AOS.init();
 </script>
 <link href="CJ/css/style.css" rel="stylesheet">
 <script src="CJ/js/jquery.min.js"></script>
@@ -165,19 +159,4 @@
 <script src="CJ/js/bootstrap-datepicker.js"></script>
 <script src="CJ/js/bootstrap-datepicker.fa.js"></script>
 <script src="CJ/js/script.js"></script>
-<script>
-    $("#datepicker").datepicker({
-        changeMonth: true,
-        changeYear: true
-    });
-</script>
-<script>
-
-    $("#datepicker1").datepicker({
-        changeMonth: true,
-        changeYear: true ,
-    });
-
-
-</script>
 </html>

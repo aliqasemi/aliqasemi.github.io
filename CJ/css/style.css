@@ -836,22 +836,13 @@ hr.type_5 {
      font-family: cursive;
  }
 
-.glow1 {
+.glow {
     font-size: 30px;
     color: #00acc1;
     -webkit-animation: glow .5s ease-in-out infinite alternate;
     -moz-animation: glow .5s ease-in-out infinite alternate;
     animation: glow .5s ease-in-out infinite alternate;
 }
-
-.glow2 {
-    font-size: 30px;
-    color: #00acc1;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
 
 @-webkit-keyframes glow {
     from {

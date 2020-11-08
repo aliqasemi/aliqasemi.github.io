@@ -837,7 +837,7 @@ hr.type_5 {
  }
 
 .glow {
-    font-size: 30px;
+    font-size: 15px;
     color: #00acc1;
     -webkit-animation: glow .5s ease-in-out infinite alternate;
     -moz-animation: glow .5s ease-in-out infinite alternate;

@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Ali Qasemi -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ali Qasemi</title>
+    <title>Ali Qasemi - Backend Developer</title>
     <link href="CJ/css/bootstrap.css" rel="stylesheet">
     <link href="CJ/css/style.css" rel="stylesheet">
     <link href="CJ/css/aos.css" rel="stylesheet">
     <link href="CJ/css/material_icon.css" rel="stylesheet">
-    <script defer src="CJ/js/all.js"></script> <!--load all styles -->
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #c9d1d9;
+            font-family: 'Fira Code', monospace;
+            font-size: 18px;
+        }
+        .container, .list-group-item {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+        }
+        .list-group-item:hover, .list-group-item.active {
+            background-color: #30363d;
+            color: #58a6ff;
+        }
+        a, a:hover {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .social img {
+            filter: invert(60%);
+        }
+        .social li {
+            display: inline-block;
+            margin: 10px;
+        }
+        hr {
+            border-color: #30363d;
+        }
+        #demo {
+            color: #8b949e;
+            font-style: italic;
+        }
+    </style>
+    <script defer src="CJ/js/all.js"></script>
 </head>
-<body style="font-family:'Courier'; font-size: 50px" class="bg-dark text-info">
+<body>
 <header>
-    <div class="container bg-dark" style="margin-top: 15px">
-        <div class="row" style="font-size: 15px" data-aos="fade-right">
-            <div>C:\AliQasemi\<span id="demo">about-me</span><span class="glow">>-</span></div>
+    <div class="container mt-4">
+        <div class="row" data-aos="fade-right">
+            <div>/home/aliqasemi/<span id="demo">about-me</span><span class="glow">>-</span></div>
         </div>
     </div>
 </header>
@@ -23,69 +56,66 @@
 <main data-aos="zoom-in-down">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-12" style="font-size: 20px">
+            <div class="col-lg-5 col-sm-12">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item bg-dark text-info list-group-item-action active" name="about-me"
+                    <a class="list-group-item list-group-item-action active" name="about-me"
                        onclick="f1()" id="list-About-me-list"
                        data-toggle="list"
                        href="#list-About-me" role="tab" aria-controls="home">About me</a>
-                    <a class="list-group-item bg-dark text-info list-group-item-action" name="educations" onclick="f2()"
+                    <a class="list-group-item list-group-item-action" name="educations" onclick="f2()"
                        id="list-Educations-list"
                        data-toggle="list"
                        href="#list-Educations" role="tab" aria-controls="profile">Educations</a>
-                    <a class="list-group-item bg-dark text-info list-group-item-action" name="interest" onclick="f3()"
+                    <a class="list-group-item list-group-item-action" name="interest" onclick="f3()"
                        id="list-Interest-list"
                        data-toggle="list"
                        href="#list-Interest" role="tab" aria-controls="messages">Interest</a>
-                    <a class="list-group-item bg-dark text-info list-group-item-action" name="contact"
+                    <a class="list-group-item list-group-item-action" name="contact"
                        onclick="f4()" id="list-Skills-list"
                        data-toggle="list"
                        href="#list-Skills" role="tab" aria-controls="settings">Contact</a>
                 </div>
             </div>
-            <div class="col-lg-7 col-sm-12" style="margin-top: 20px">
-                <div class="container tab-content" id="nav-tabContent" style="font-size:30px">
+            <div class="col-lg-7 col-sm-12 mt-3">
+                <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-About-me" role="tabpanel"
                          aria-labelledby="list-About-me-list" data-aos="zoom-out-up" data-aos-duration="800">
-                        My name is AliQasemi.<br>
-                        <div style="font-size: 20px">
-                            <i class="fas fa-map-marker-alt"></i>
-                            qom, mashhad
-                        </div>
+                        My name is Ali Qasemi.<br>
+                        <i class="fas fa-map-marker-alt"></i> Based in Anywhere
                         <hr>
-                        Interested in : <br>
-                        <ul class="list-group" style="font-size: 15px">
-                            <li class="list-group-item-action">Laravel backend</li>
-                            <li class="list-group-item-action">Frontend(VueJs,...)</li>
-                            <li class="list-group-item-action">Data Mining</li>
+                        Interested in:
+                        <ul class="list-group">
+                            <li class="list-group-item">PHP</li>
+                            <li class="list-group-item">Laravel</li>
+                            <li class="list-group-item">MySQL</li>
+                            <li class="list-group-item">Golang</li>
+                            <li class="list-group-item">Docker</li>
+                            <li class="list-group-item">Algorithm Design</li>
                         </ul>
                         <hr>
-                        Work At : <br>
-                        <ul class="list-group" style="font-size: 15px">
-                            <li class="list-group-item-action">WillaArts(Laravel&Front)</li>
+                        Work At:
+                        <ul class="list-group">
+                            <li class="list-group-item">WillaArts (Laravel & Frontend)</li>
+                            <li class="list-group-item"><a href="https://shiamuslimproject.com/">ShiaMuslim (PHP & Golang)</a></li>
                         </ul>
-                        <hr>
-                        Always Learning...
+                        <hr>Always Learning...
                     </div>
+                    <!-- Additional sections: Educations, Interests, Contact go here as in your original code -->
+
+
                     <div class="tab-pane fade" id="list-Educations" role="tabpanel"
                          aria-labelledby="list-Educations-list">
                         <div style="font-size: 20px">
-                            Elementary School : jahad Elementry School.<br>
-                            <hr>
-                            Middle School : zargari Middle School and seyyedi Middle School<br>
-                            <hr>
-                            High School : ayatollah Meshkini High School(Mathematical Physics)<br>
-                            <hr>
                             Bachelor : Shahrood University of Technology(Software Engineering)<br>
                             <hr>
-                            Master : Shahrood University of Technology(Student Of Software Engineering)
+                            Master : Shahrood University of Technology(Software Engineering)
 
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-Interest" role="tabpanel" aria-labelledby="list-Interest-list">
                         <div style="font-size: 20px">
                             look at my last projects from <a href="https://github.com/aliqasemi">here</a>.
-                         
+
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-Skills" role="tabpanel" aria-labelledby="list-Skills-list">
@@ -98,61 +128,20 @@
                             <p style="font-size: 20px">امام علی علیه السلام</p><br>
                         </div>
                         <div class="col-12" style="margin: 0 auto ; text-align: center ;">
-                            <ul class="social" style="text-align: center ; margin: 0 auto ; list-style-type: none">
-                                <li style="margin: 20px"><a
-                                        href="https://www.youtube.com/channel/UCuWmxkNIDxa0ryqDdQ0TbIg/featured?view_as=subscriber">
-                                    <img src="https://img.icons8.com/ios/26/000000/youtube.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://twitter.com/aliqasemi_77"> <img
-                                        src="https://img.icons8.com/ios/26/000000/twitter.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://t.me/aliqasemi_77"> <img
-                                        src="https://img.icons8.com/ios/26/000000/sent.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://github.com/aliqasemi"> <img
-                                        src="https://img.icons8.com/ios/26/000000/github.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://www.linkedin.com/in/aliqasemi/"> <img
-                                        src="https://img.icons8.com/material-outlined/24/000000/linkedin.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://hamgit.ir/aliqasemi"> <img
-                                        src="https://img.icons8.com/ios/26/000000/gitlab.png"> </a></li>
-                                <li style="margin: 20px"><a href="https://gitlab.com/aliqasemi"> <img
-                                        src="https://img.icons8.com/ios/26/000000/gitlab.png"> </a></li>
-                            </ul>
-                        </div>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-</body>
 <script>
-    function f1() {
-        var x = document.getElementById("list-About-me-list").name;
-        document.getElementById("demo").innerHTML = x;
-    }
-
-    function f2() {
-        var x = document.getElementById("list-Educations-list").name;
-        document.getElementById("demo").innerHTML = x;
-    }
-
-    function f3() {
-        var x = document.getElementById("list-Interest-list").name;
-        document.getElementById("demo").innerHTML = x;
-    }
-
-    function f4() {
-        var x = document.getElementById("list-Skills-list").name;
-        document.getElementById("demo").innerHTML = x;
-    }
+    function f1() { document.getElementById("demo").innerHTML = "about-me"; }
+    function f2() { document.getElementById("demo").innerHTML = "educations"; }
+    function f3() { document.getElementById("demo").innerHTML = "interest"; }
+    function f4() { document.getElementById("demo").innerHTML = "contact"; }
 </script>
 <script src="CJ/js/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<link href="CJ/css/style.css" rel="stylesheet">
+<script> AOS.init(); </script>
 <script src="CJ/js/jquery.min.js"></script>
 <script src="CJ/js/bootstrap.js"></script>
-<script src="CJ/js/bootstrap-datepicker.js"></script>
-<script src="CJ/js/bootstrap-datepicker.fa.js"></script>
-<script src="CJ/js/script.js"></script>
+</body>
 </html>

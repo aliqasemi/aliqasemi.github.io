@@ -480,6 +480,8 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .img-thumbnail {
@@ -4533,8 +4535,9 @@ tbody.collapse.show {
 }
 
 .card-img {
-  width: 100%;
+  width: 25%;
   border-radius: calc(0.25rem - 1px);
+  margin: 0 auto;
 }
 
 .card-img-top {

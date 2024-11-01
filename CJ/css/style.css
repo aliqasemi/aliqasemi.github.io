@@ -3,7 +3,7 @@
     src: url('font/IRANSansWeb_Medium.woff') format('woff');
 }
 body{
-    background-image: url('../pic/wall.jpg');
+    /*background-image: url('../pic/wall.jpg');*/
 }
 div>div>div>nav>div>ul>li{
     transition: all 1s ;

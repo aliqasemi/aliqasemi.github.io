@@ -41,6 +41,28 @@
             color: #8b949e;
             font-style: italic;
         }
+
+        body {
+            background-color: #1e1e1e;
+            color: #c9d1d9;
+            font-family: 'Fira Code', monospace;
+            font-size: 18px;
+        }
+        .container, .list-group-item {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+        }
+        .list-group-item:hover, .list-group-item.active {
+            background-color: #30363d;
+            color: #58a6ff;
+        }
+        a, a:hover {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        hr {
+            border-color: #30363d;
+        }
     </style>
     <script defer src="CJ/js/all.js"></script>
 </head>
@@ -74,6 +96,10 @@
                        onclick="f4()" id="list-Skills-list"
                        data-toggle="list"
                        href="#list-Skills" role="tab" aria-controls="settings">Contact</a>
+                    <a class="list-group-item list-group-item-action" name="resume" onclick="f5()"
+                       id="list-Resume-list"
+                       data-toggle="list"
+                       href="#list-Resume" role="tab" aria-controls="settings">Resume</a>
                 </div>
             </div>
             <div class="col-lg-7 col-sm-12 mt-3">
@@ -130,6 +156,10 @@
                         <div class="col-12" style="margin: 0 auto ; text-align: center ;">
                 </div>
             </div>
+                    <!-- Resume Tab -->
+                    <div class="tab-pane fade" id="list-Resume" role="tabpanel" aria-labelledby="list-Resume-list">
+                        <embed src="ALiQasemi.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
         </div>
     </div>
 </main>
@@ -138,6 +168,7 @@
     function f2() { document.getElementById("demo").innerHTML = "educations"; }
     function f3() { document.getElementById("demo").innerHTML = "interest"; }
     function f4() { document.getElementById("demo").innerHTML = "contact"; }
+    function f5() { document.getElementById("demo").innerHTML = "resume"; }
 </script>
 <script src="CJ/js/aos.js"></script>
 <script> AOS.init(); </script>

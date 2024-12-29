@@ -20,6 +20,7 @@
 
 % Custom Colors:
 \definecolor{primaryColor}{RGB}{0, 79, 144}
+\definecolor{secondaryColor}{RGB}{60, 120, 180}
 \definecolor{linkBorderColor}{RGB}{0, 79, 144}
 
 % Settings:
@@ -29,19 +30,20 @@
     colorlinks=true,
     linkcolor=primaryColor,
     urlcolor=primaryColor,
-    pdfborder={0 0 1 [3]}, % Customize border style
-    pdfborderstyle={/S/U/W 1} % Dashed underline
+    pdfborder={0 0 1 [3]},
+    pdfborderstyle={/S/U/W 1}
 }
 
 % Section formatting:
-\titleformat{\section}{
-    \Large\color{primaryColor}
-}{
-}{
-}{
-    \textbf{#1}\titlerule[0.8pt]
-}
-\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+\titleformat{\section} % Custom section formatting
+  {\Large\color{primaryColor}\bfseries} % Section font and color
+  {} % Section number (empty for no number)
+  {0pt} % Space between number and title
+  {\textbf{#1}\titlerule[0.8pt]} % Section title and underline
+\titlespacing{\section}
+  {0pt} % Left margin
+  {0.5cm} % Space above
+  {0.3cm} % Space below
 
 % Icon size adjustment:
 \newcommand{\icon}[1]{{\small #1}}
@@ -50,70 +52,59 @@
 
 % Header
 \begin{center}
-    \fontsize{30pt}{30pt}\textbf{ALI QASEMI} \\
-    \vspace{0.2cm}
+    \fontsize{30pt}{36pt}\textbf{ALI QASEMI} \\[0.2cm]
+    \fontsize{12pt}{14pt}\color{secondaryColor}\textbf{Qom, Iran} \\[0.3cm]
     \href{mailto:Qasemi4245qq@gmail.com}{\icon{\faEnvelope[regular]} Qasemi4245qq@gmail.com} \ |
     \href{https://www.linkedin.com/in/aliqasemi/}{\icon{\faLinkedin} LinkedIn} \ |
     \href{https://github.com/aliqasemi}{\icon{\faGithub} GitHub} \ |
-    \href{http://aliqasemi.github.io/}{\icon{\faLink} Personal Blog}
+    \href{http://aliqasemi.github.io/}{\icon{\faLink} Personal Blog} \ |
+    \icon{\faPhone} +989195884064
 \end{center}
 
 % Objective
 \section{Objective}
-\textit{I am seeking a backend developer position where I can contribute to the development of applications and software architecture while ensuring efficient performance. I am particularly interested in projects involving PHP Laravel and Golang.}
+\textit{I am seeking a backend developer position where I can contribute to the development of applications, software architecture, and machine learning models using Python while ensuring efficient performance. I am particularly interested in projects involving PHP Laravel, Golang, and data-driven systems.}
 
 % Education
 \section{Education}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Shahood University of Technology (2020 -- 2022)} \\
+    \item \textbf{Shahrood University of Technology (2020 -- 2022)} \\
     Master's degree in Software Engineering \\
-    Developed a tourism destination recommendation system using Python, integrating Density Means clustering and Genetic Algorithms to improve recommendation accuracy. Achieved a 28 percent improvement in precision and user satisfaction compared to traditional methods, enhancing personalization and contributing to the application of evolutionary algorithms in data-driven systems.
-    \item \textbf{Shahood University of Technology (2016 -- 2020)} \\
+    Developed a tourism destination recommendation system using Python, integrating Density Means clustering and Genetic Algorithms to improve recommendation accuracy. Achieved a 28\% improvement in precision and user satisfaction compared to traditional methods, enhancing personalization and contributing to the application of evolutionary algorithms in data-driven systems.
+    \item \textbf{Shahrood University of Technology (2016 -- 2020)} \\
     Bachelor of Engineering in Software Engineering
 \end{itemize}
-
 
 % Experience
 \section{Experience}
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Backend Developer, Willa Arts (Sep 2020 -- Aug 2022)}
-    \begin{itemize}[leftmargin=1em]
-        \item Designed the panel for a web builder application using PHP Laravel and Vue.js.
-        \item Implemented a module enabling clients to design websites with various features.
-        \item Developed a roll call system with Vue.js for the frontend and PHP Laravel for the backend.
-        \item Built an LMS module for remote instruction using PHP Laravel for backend course management and Vue.js for client-side slide displays.
-        \item Created a service store introducing company services with categories and features using PHP Laravel and Vue.js.
-        \item Developed an audio server for podcasts and voice content with publisher features, leveraging PHP Laravel and Vue.js frameworks.
-        \item Contributed to multiple modules offered as features to clients.
-        \item Utilized Vue 2 and Vuex for state management, and transitioned to Vue 3 and Pinia for advanced store management.
-    \end{itemize}
-    \item \textbf{Backend Developer, Yasin.ai (Jun 2023 -- Nov 2024)}
-    \begin{itemize}[leftmargin=1em]
+    \item \textbf{Backend Developer, yasin.ai (Jun 2023 -- Nov 2024)} \\
+    \begin{itemize}[leftmargin=1.2em]
         \item Led initial development of the Shia Muslim application, including backend and management panel.
-        \item Designed a panel to manage texts, duas, and scriptural content categorized for immediate searching.
-        \item Implemented data streaming for videos, live streams, and audio categorized and tagged for user subscriptions.
-        \item Developed streaming data services using Golang and the Mux framework.
-        \item I am using Go threads and a database queue for streaming data, which resulted in a 30 percent increase in streaming speed based on my setup without any server crashes.
-        \item Managed application content and context with PHP Laravel.
-        \item Integrated ElasticSearch for rapid and efficient content searching.
-        \item Optimized application performance using Octane technology with Golang for the Laravel framework to handle high request volumes.
-        \item Fully dockerized the application, including MongoDB, Octane app, MySQL, Golang, Nginx, Redis, MinIO, Prometheus, and Grafana.
-        \item Created metrics for Prometheus with cache management to analyze application and user request patterns to identify areas of high interest.
-        \item Enabled multilingual support across all aspects of the application, allowing dynamic addition of new languages via the management panel.
-        \item Leveraged technologies such as MySQL, MongoDB, Redis caching, and Golang streaming for scalable data handling.
-        \item I achieved a significant reduction in latency, improving response times from about 500ms seconds to about 150ms seconds. Additionally, I increased the request processing capability from about 120 requests per second with PHP-FPM to about 190 requests per second using Swoole, based on my setup.
+        \item Implemented data streaming for videos, live streams, and audio, categorized and tagged for user subscriptions.
+        \item Developed streaming data services using Golang and the Mux framework, achieving a 30\% increase in streaming speed without server crashes.
+        \item Optimized performance using PHP Laravel and Octane, reducing latency from 500ms to 150ms and increasing requests per second from 120 to 190.
+        \item Fully dockerized the application with services like MongoDB, MySQL, Redis, MinIO, and Prometheus for scalability.
+    \end{itemize}
+    \item \textbf{Backend Developer, willaarts (Sep 2020 -- Aug 2022)} \\
+    \begin{itemize}[leftmargin=1.2em]
+        \item Designed a web builder panel using PHP Laravel and Vue.js, enabling client website design.
+        \item Developed LMS and roll call systems integrating PHP Laravel backend and Vue.js frontend.
+        \item Created a podcast server with publishing capabilities and contributed to multiple client modules.
     \end{itemize}
 \end{itemize}
 
 % Skills
 \section{Skills}
 \textbf{Programming Languages:} PHP, Golang, Python \\
-\textbf{Technologies:} Laravel, MySQL, MongoDB, Docker, Redis, Minio, Vue.js, Monitoring \\
-\textbf{Other:} Algorithm Design, Data Structures
+\textbf{Technologies:} Laravel, MySQL, MongoDB, Docker, Redis, MinIO, Vue.js, Monitoring \\
+\textbf{Other:} Algorithm Design, Data Structures, Machine Learning
 
 % Courses
 \section{Courses}
 \begin{itemize}[leftmargin=*]
+    \item Professional Project-Oriented Course In Natural Language Processing (NLP) \\
+    \href{https://quera.org/certificate/wfRPimzH/}{Certificate Link}
     \item Docker Expert at TOSINSO \\
     \href{https://tosinso.com/files/get/f6a4dee5-402f-4b49-9b25-bdc06fb2a464}{Certificate Link}
     \item Task-Oriented Course in Version Control with Git at Quera \\
@@ -128,13 +119,23 @@
     \item \textbf{Shia Muslim Application} \\
     \href{https://shiamuslimproject.com/}{shiamuslimproject.com} \ |
     \href{https://play.google.com/store/apps/details?id=com.shiamuslimproject.main}{Play Store} \ |
-    \href{https://apps.apple.com/app/shia-muslim/id1613187510}{App Store}
+    \href{https://apps.apple.com/app/shia-muslim/id1613187510}{App Store} \\
+    This application provides spiritual content consisting of Quran, Duas, Nahjolbalagha, Sahife, video and audio streaming, podcasts, a social media platform, a library, Istikhara services, and various religious courses.
     \item \textbf{Divine Muslim Project} \\
     \href{https://divinemuslim.com/}{divinemuslim.com} \ |
     \href{https://play.google.com/store/apps/details?id=com.divine.muslim&pcampaignid=web_share}{Play Store} \ |
-    \href{https://apps.apple.com/app/divine-muslim/id6453523582}{App Store}
-    \item \textbf{Willa Arts Project} \\
-    \href{https://www.meshkee.com/cms-website}{cms-website}
+    \href{https://apps.apple.com/app/divine-muslim/id6453523582}{App Store} \\
+    This project includes Quran and Duas with recommendations for clients to enjoy personalized spiritual experiences.
+    \item \textbf{willaarts Project} \\
+    \href{https://www.meshkee.com/cms-website}{cms-website} \\
+    This is a web builder application designed to dynamically create templates and modules tailored for businesses.
+    \item \textbf{Density Kmeans Cluster} \\
+    \href{https://github.com/aliqasemi/DensityKmeans}{GitHub Repository} \\
+    This project was developed for automatic clustering, which minimizes the dependent variables for clustering. In this method, density clustering of points is very important, and its result will be published in the article. Also, this cluster was able to reduce the problems encountered in Kmeans and Dbscan clustering.
 \end{itemize}
+
+% Additional Information
+\section{Additional Information}
+\textbf{Military Service:} Completed (November 2022 -- October 2024)
 
 \end{document}
